@@ -12,14 +12,19 @@
 #    F_f
 #
 #--------------------------------------------------------
+# This model is based on the Green-Ampt method described
+# in <Applied Hydrology>, pp110.
+# 
+# Ref:
+# Chow, Ven T., David R. Maidment, and Larry W. Mays. 
+# Applied hydrology. 1988.
+#--------------------------------------------------------
 
 from scipy.optimize import newton
 from pprint import pprint
 from json import dump
 from math import log
 import numpy as np
-
-#FILE_PATH = "C:\\Apache24\\htdocs\\models\\output\\"
 
 class GreenAmpt(object):
     '''
